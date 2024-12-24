@@ -1,0 +1,186 @@
+[About]
+Type=label
+Label=About
+Category=About Plugin
+CategoryOrder=-1
+Index=0
+Default=Nuke's CopyCat Plugin for Deadline
+Description=Not configurable.
+
+[ConcurrentTasks]
+Type=label
+Label=ConcurrentTasks
+Category=About Plugin
+CategoryOrder=-1
+Index=0
+Default=True
+Description=Not configurable.
+
+[SceneFile]
+Type=filename
+Label=Scene Filename
+Category=Scene File
+CategoryOrder=-1
+Index=0
+Description=The scene filename as it exists on the network.
+Required=false
+DisableIfBlank=true
+
+[RenderExecutable14_1]
+Type=multilinemultifilename
+Category=Nuke 14 Render Executables
+CategoryOrder=0
+CategoryIndex=4
+Label=Nuke 14.1 Render Executable
+Default=C:\Program Files\Nuke14.1v1\Nuke14.1.exe;/usr/local/Nuke14.1v1/Nuke14.1;/Applications/Nuke14.1v1/Nuke14.1v1.app/Contents/MacOS/Nuke14.1
+Description=The path to the Nuke 14.1 executable file used for rendering. Enter alternative paths on separate lines.
+
+[RenderExecutable14_1]
+Type=multilinemultifilename
+Category=Nuke 14 Render Executables
+CategoryOrder=0
+CategoryIndex=2
+Label=Nuke 14.1 Render Executable
+Default=C:\Program Files\Nuke14.1v2\Nuke14.1.exe;/usr/local/Nuke14.1v2/Nuke14.1;/Applications/Nuke14.1v2/Nuke14.1v2.app/Contents/MacOS/Nuke14.1
+Description=The path to the Nuke 14.1 executable file used for rendering. Enter alternative paths on separate lines.
+
+[RenderExecutable14_1]
+Type=multilinemultifilename
+Category=Nuke 14 Render Executables
+CategoryOrder=0
+CategoryIndex=3
+Label=Nuke 14.1 Render Executable
+Default=C:\Program Files\Nuke14.1v3\Nuke14.1.exe;/usr/local/Nuke14.1v3/Nuke14.1;/Applications/Nuke14.1v3/Nuke14.1v3.app/Contents/MacOS/Nuke14.1
+Description=The path to the Nuke 14.1 executable file used for rendering. Enter alternative paths on separate lines.
+
+[RenderExecutable14_1]
+Type=multilinemultifilename
+Category=Nuke 14 Render Executables
+CategoryOrder=0
+CategoryIndex=0
+Label=Nuke 14.1 Render Executable
+Default=C:\Program Files\Nuke14.1v4\Nuke14.1.exe;/usr/local/Nuke14.1v4/Nuke14.1;/Applications/Nuke14.1v4/Nuke14.1v4.app/Contents/MacOS/Nuke14.1
+Description=The path to the Nuke 14.1 executable file used for rendering. Enter alternative paths on separate lines.
+
+[RenderExecutable14_1]
+Type=multilinemultifilename
+Category=Nuke 14 Render Executables
+CategoryOrder=0
+CategoryIndex=5
+Label=Nuke 14.1 Render Executable
+Default=C:\Program Files\Nuke14.1v5\Nuke14.1.exe;/usr/local/Nuke14.1v5/Nuke14.1;/Applications/Nuke14.1v5/Nuke14.1v5.app/Contents/MacOS/Nuke14.1
+Description=The path to the Nuke 14.1 executable file used for rendering. Enter alternative paths on separate lines.
+
+[RenderExecutable15_0]
+Type=multilinemultifilename
+Category=Nuke 15 Render Executables
+CategoryOrder=1
+CategoryIndex=0
+Label=Nuke 15.0 Render Executable
+Default=C:\Program Files\Nuke15.0v1\Nuke15.0.exe;/usr/local/Nuke15.0v1/Nuke15.0;/Applications/Nuke15.0v1/Nuke15.0v1.app/Contents/MacOS/Nuke15.0
+Description=The path to the Nuke 15.0 executable file used for rendering. Enter alternative paths on separate lines.
+
+[RenderExecutable15_0]
+Type=multilinemultifilename
+Category=Nuke 15 Render Executables
+CategoryOrder=1
+CategoryIndex=1
+Label=Nuke 15.0 Render Executable
+Default=C:\Program Files\Nuke15.0v2\Nuke15.0.exe;/usr/local/Nuke15.0v2/Nuke15.0;/Applications/Nuke15.0v21/Nuke15.0v2.app/Contents/MacOS/Nuke15.0
+Description=The path to the Nuke 15.0 executable file used for rendering. Enter alternative paths on separate lines.
+
+[RenderExecutable15_0]
+Type=multilinemultifilename
+Category=Nuke 15 Render Executables
+CategoryOrder=1
+CategoryIndex=2
+Label=Nuke 15.0 Render Executable
+Default=C:\Program Files\Nuke15.0v3\Nuke15.0.exe;/usr/local/Nuke15.0v3/Nuke15.0;/Applications/Nuke15.0v3/Nuke15.0v3.app/Contents/MacOS/Nuke15.0
+Description=The path to the Nuke 15.0 executable file used for rendering. Enter alternative paths on separate lines.
+
+[RenderExecutable15_0]
+Type=multilinemultifilename
+Category=Nuke 15 Render Executables
+CategoryOrder=1
+CategoryIndex=3
+Label=Nuke 15.0 Render Executable
+Default=C:\Program Files\Nuke15.0v4\Nuke15.0.exe;/usr/local/Nuke15.0v4/Nuke15.0;/Applications/Nuke15.0v4/Nuke15.0v4.app/Contents/MacOS/Nuke15.0
+Description=The path to the Nuke 15.0 executable file used for rendering. Enter alternative paths on separate lines.
+
+[RenderExecutable15_0]
+Type=multilinemultifilename
+Category=Nuke 15 Render Executables
+CategoryOrder=1
+CategoryIndex=4
+Label=Nuke 15.0 Render Executable
+Default=C:\Program Files\Nuke15.0v5\Nuke15.0.exe;/usr/local/Nuke15.0v5/Nuke15.0;/Applications/Nuke15.0v5/Nuke15.0v5.app/Contents/MacOS/Nuke15.0
+Description=The path to the Nuke 15.0 executable file used for rendering. Enter alternative paths on separate lines.
+
+[MainMachine]
+Type=SlaveList
+Category=Training Machines
+CategoryOrder=3
+CategoryIndex=0
+Label=Worker To Use as MainMachine
+Default=
+Required=true
+Description=Main traning mainmachine.
+
+[MainMachineIP]
+Type=String
+Category=Training Machines
+CategoryOrder=3
+CategoryIndex=1
+Description=IP of main machine
+Required=True
+DisableIfBlank=false
+Description=Ip of first machine.
+
+[UseIPv6]
+Type=boolean
+Label=Use IPv6
+Category=Training Machines
+CategoryOrder=3
+CategoryIndex=2
+Description=If IPv6 is used for ip, this should be enabled
+Required=false
+DisableIfBlank=true
+
+[Port]
+Type=Integer
+Category=Training Machines
+CategoryOrder=3
+CategoryIndex=3
+Label=Port
+Required=true
+Default=3000
+Description=A single worker mainmachine. If you set multiple machines plugin will drop every machine except first.
+
+[TrainingSlaves]
+Type=slavelist
+Category=Training Machines
+CategoryOrder=3
+CategoryIndex=4
+Label=Workers used for Training
+Required=true
+Default=
+Description=A list of Workers that should be used for job, with mainmachine included. separate them as list for example: worker001,worker002,worker003.
+
+[SyncInterval]
+Type=Integer
+Category=Training Machines
+CategoryOrder=3
+CategoryIndex=5
+Label=Sync Interval for CopyCat
+Default=1
+Required=false
+Description=
+
+[EnablePathMapping]
+Type=boolean
+Category=Path Mapping (For Mixed Farms)
+CategoryOrder=10
+CategoryIndex=0
+Label=Enable Path Mapping
+Default=true
+Description=If enabled, a temporary Nuke file will be created locally on the Worker for rendering because Deadline does the path mapping directly in the Nuke file. This feature can be turned off if there are no Path Mapping entries defined in the Repository Options.

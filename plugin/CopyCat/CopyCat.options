@@ -1,0 +1,68 @@
+[SceneFile]
+Type=filename
+Label=Scene Filename
+Category=Scene File
+Index=0
+Description=The scene filename as it exists on the network.
+Required=false
+DisableIfBlank=true
+
+[Version]
+Type=label
+Label=Version
+Category=Version Info
+Index=1
+Description=The version of Nuke to render with.
+Required=false
+DisableIfBlank=true
+
+[CopyCatNode]
+Type=Label
+Label=Node
+Category=Training Machines
+Index=2
+Description=Name of training CopyCat Node.
+Required=true
+DisableIfBlank=true
+
+[WorldSize]
+Type=Integer
+Category=Training Machines
+Index=3
+Default=
+Required=true
+Description=A number of machines for training.
+
+[ContinueOnError]
+Type=boolean
+Label=Continue On Error
+Category=Rendering Options
+Index=6
+Description=If checked Nuke will attempt to render subsequent frames in the range after an error. Otherwise, Nuke will stop on the first error.
+Required=false
+DisableIfBlank=true
+
+[UseGpu]
+Type=boolean
+Label=Use the GPU For Rendering
+Category=Rendering Options
+Index=8
+Description=If Nuke should also use the GPU for rendering.
+Required=false
+DisableIfBlank=true
+
+[GpuOverride]
+Type=integer
+Minimum=0
+Maximum=15
+Label=GPU Override
+Category=Rendering Options
+Index=9
+Description=The GPU that Nuke should use if you are using the GPU for rendering. ( Used for Nuke 8 and higher. )
+Required=false
+DisableIfBlank=true
+
+
+
+
+
