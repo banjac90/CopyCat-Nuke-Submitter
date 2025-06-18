@@ -25,9 +25,13 @@ def GetDeadlinePlugin():
 def CleanupDeadlinePlugin( deadlinePlugin ):
     deadlinePlugin.Cleanup()
 
-def get_local_ip():
+def get_local_ipv4():
     try:
-        ip_address = socket.gethostbyname(socket.gethostname())
+        # Open a dummy socket to a public IPv4 address (doesn't send any data)
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ip_address = s.getsockname()[0]
+        s.close()
         return ip_address
     except Exception as e:
         print(f"Error getting local IP address: {e}")
@@ -258,7 +262,7 @@ class CopyCatPlugin (DeadlinePlugin):
         if (worldSize != len(othermachineslist)):
             worldSize = len(othermachineslist)
 
-        ipAddress = get_local_ip() if not useIpv6 else get_local_ipv6()
+        ipAddress = get_local_ipv4() if not useIpv6 else get_local_ipv6()
         thisMachine = self.GetSlaveName().lower()        
         # main machine is rank 0 so if not main machine give it different rank
         if thisMachine != mainmachine:
