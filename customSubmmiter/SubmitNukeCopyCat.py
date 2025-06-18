@@ -441,7 +441,8 @@ def SubmitToDeadline():
         #Job and plugin info dicts
         jobInfo = CopyCatDialog.getJobInfoDict()
         if not jobInfo:
-            nuke.message("JobInfo dict for CopyCat are not generated. The submission has been canceled.")            
+            nuke.message("JobInfo dict for CopyCat are not generated. The submission has been canceled.")    
+            return        
         
         pluginInfo = CopyCatDialog.getPluginInfo()
         if not pluginInfo:
