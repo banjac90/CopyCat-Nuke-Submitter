@@ -263,7 +263,9 @@ class CopyCatPlugin (DeadlinePlugin):
             worldSize = len(othermachineslist)
 
         ipAddress = get_local_ipv4() if not useIpv6 else get_local_ipv6()
-        thisMachine = self.GetSlaveName().lower()        
+        thisMachine = self.GetSlaveName().lower()    
+        print(f"Current Machine IP: {ipAddress}")  
+        print(f"Current Machine Name: {thisMachine}")   
         # main machine is rank 0 so if not main machine give it different rank
         if thisMachine != mainmachine:
             print("this is not main machine")
@@ -276,7 +278,7 @@ class CopyCatPlugin (DeadlinePlugin):
         #when this machine is mainmachine check it IP
         if thisMachine == mainmachine and ipAddress != mainMachineIp:
             self.FailRender("Your Main Machine IP is incorrect! Please check main machine IP!")
-
+    
         self.SetProcessEnvironmentVariable("COPYCAT_MAIN_ADDR", str(mainMachineIp))  
         self.SetProcessEnvironmentVariable("COPYCAT_RANK", str(rank))
         self.SetProcessEnvironmentVariable("COPYCAT_LOCAL_ADDR", str(ipAddress))
